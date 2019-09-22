@@ -23,7 +23,7 @@ extension Double {
     }
     
     public var unitString: String {
-        return String(self) + "B"
+        return String(self) + " B"
     }
     
     internal func afterPoint(n: Int) -> String {
