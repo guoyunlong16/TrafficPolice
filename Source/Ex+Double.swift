@@ -23,13 +23,7 @@ extension Double {
     }
     
     public var unitString: String {
-        if self.gb > 1 {
-            return self.gb.afterPoint(n: 1) + " GB"
-        } else if self.mb > 1 {
-            return self.mb.afterPoint(n: 1) + " MB"
-        } else {
-            return self.kb.afterPoint(n: 1) + " KB"
-        }
+        return String(self) + "B"
     }
     
     internal func afterPoint(n: Int) -> String {
