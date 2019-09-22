@@ -44,6 +44,7 @@ public struct TrafficSummary {
 extension TrafficSummary: CustomStringConvertible {
     
     public var description: String {
-        return "wifi:[\(wifi)],\nwwan:[\(wwan)]"
+        let timeInterval = Date().timeIntervalSince1970
+        return String(timeInterval)+" wifi:[\(wifi)]\n"+String(timeInterval)+" wwan:[\(wwan)]"
     }
 }
